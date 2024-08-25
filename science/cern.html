@@ -1,0 +1,319 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>NASA Page</title>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+<style type="text/css">
+body, td, th {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 10px;
+    height: 100%;
+    color: #444;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    color: #003399;
+}
+
+h1 {
+    font-size: 36px;
+    color: #330099;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 30px;
+    color: #003399;
+    text-align: center;
+    margin-top: 20px;   
+}
+
+p {
+    line-height: 1.6;
+}
+
+nav {
+    background: #003399;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background: #002266;
+    border-radius: 5px;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #003399;
+    padding: 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+nav ul li ul li {
+    width: 200px;
+    margin: 0;
+}
+
+nav ul li ul li a {
+    font-size: 16px;
+    color: white;
+    padding: 10px;
+}
+
+nav ul li ul li a:hover,
+nav ul li ul li a:focus {
+    background: #002266;
+}
+
+nav ul li:hover ul,
+nav ul li:focus-within ul {
+    display: block;
+}
+
+.short-hr {
+    width: 95%;
+    margin: 20px auto;
+    border: 1px solid #0066FF;
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.image-row img {
+    width: 250px;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-row img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+body {
+    background-image: url('../img/hadron.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #171429;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.table-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 0px 0;
+}
+
+.table-wrapper table {
+    width: 100%;
+    max-width: 900px;
+    border: 2px solid #0066FF;
+    background: #FFFFFF;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.table-wrapper table td {
+    padding: 20px;
+}
+
+.table-wrapper table hr {
+    border-color: #0066FF;
+}
+
+.abstract {
+    margin: 20px 0;
+    padding: 20px;
+    background: #f9f9f9;
+    border-left: 5px solid #003399;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.abstract h2 {
+    margin-top: 0;
+}
+
+.footer {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.footer a {
+    color: #003399;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #002266;
+}
+</style>
+
+</head>
+
+<body>
+
+<div>
+<nav>
+    <ul id="main-menu">
+        <li><a href="#">Science</a>
+            <ul>
+                <li><a href="patriarchs.html">The Patriarchs</a></li>
+                <li><a href="cosmos.html">Cosmos</a></li>
+                <li><a href="nasa.html">NASA</a></li>
+                <li><a href="cern.html">CERN</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Religions</a>
+            <ul>
+                <li><a href="../religion/hindu.html">Hinduism</a></li>
+                <li><a href="../religion/budh.html">Buddhism</a></li>
+                <li><a href="../religion/islam.html">Islam</a></li>
+                <li><a href="../religion/spiritual.html">Spirituality</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Humans</a>
+            <ul>
+                <li><a href="../humans/atheism.html">Atheism</a></li>
+                <li><a href="../humans/idolatry.html">Idolatry</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Politics</a>
+            <ul>
+                <li><a href="../politics/presidents.html">Presidents</a></li>
+                <li><a href="../politics/occult.html">Occult</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Why Christianity</a>
+            <ul>
+                <li><a href="../christianity/israel.html">Israel</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+</div>
+
+<div class="table-wrapper">
+<table width="900" border="2" align="center" cellpadding="15" cellspacing="0" bordercolor="#0066FF" bgcolor="#FFFFFF">
+  <tr>
+    <td>
+      <p align="center">
+        <span class="style13">CERN</span>
+        <br>
+        <span class="style14">place holder here</span>
+        <br>"by Dawit Borga"
+      </p>
+      <hr class="short-hr">
+      <p align="center">
+        <span class="style10"><span class="style13">Science</span><br />
+        <span class="style14">The fear of the LORD is the beginning of wisdom, and knowledge of the Holy One is understanding.</span><br /> 
+       
+        </span>
+      </p>
+      <div class="image-row">
+        <img src="../img/cern2.JPG" alt="Image 1" title="Operation Paperclip">
+        <img src="../img/cern3.JPG" alt="Pythagoras" title="Gemini">
+        <img src="../img/cern4.JPG" alt="Apollo" title="Apollo">
+      </div>
+      <hr class="short-hr" />
+      <table width="750" border="1" align="center" cellpadding="10">
+        <tr>
+          <td>
+            <div align="center">
+              <h2>gods</h2>
+              <p>When people reject the idea of God, I find it particularly interesting because most are only familiar with the deity who condemns the world for its sins, as depicted in the Bible. Given the Bible's widespread influence, it is understandable why this is the case. However, I often wonder: what if there are other gods? What if these gods do not promise eternal life but instead offer us profound scientific knowledge about our universe? What if they do not demand anything from us except our consent to engage with them through rituals? In return, they could guide our morals, influence our thoughts, and transform our desire to worship into an obsession with the knowledge they provide, inspiring us to honor them through our works, such as naming our projects and discoveries after them.</p>
+              <p>In this discussion, I will explore the plausibility of these ideas, identify who these other gods might be, and delve into their origins. I will also evaluate whether these deities can be trusted. Additionally, I will draw parallels between religious and non-religious individuals, highlighting how both groups fulfill the common human desire to worship. I believe that humans are inherently inclined to worship, as evidenced by various forms of devotion in society. Religious individuals express this inclination through their faith in a god, while non-religious individuals may substitute this with self-worship, celebrity adoration, or other forms of idolatry, such as the pursuit of wealth and professional achievements.</p>
+              <p>Ultimately, I aim to address whether it is possible to avoid this inherent tendency to worship by adhering to what many consider the most logical and reasonable domains of our society: science and politics.</p>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <hr class="short-hr"/>
+      <div align="center">
+        <img src="../img/cern.JPG" alt="gods" title="Pythagoras" width="" height="375" loading="lazy">
+        <h1>CERN</h1>
+        <p>The European Organization for Nuclear Research, commonly known as CERN, is one of the world's largest and most respected centers for
+            scientific research. It is located near Geneva on the border of France and Switzerland. Founded in 1954, CERN's primary focus is on fundamental physics, aiming to uncover what the universe is made of and how it works. CERN also houses the world's largest and most powerful particle accelerator, the Large Hadron Collider(LHC), which is used to collide particles at high energies to study fundamental particles.</p>
+        <h3>Tim Berners-Lee</h3>    
+        <p>Tim Berners-Lee, while working at CERN, invented the World Wide Web, a revolutionary creation that has transformed global communication and information sharing. The web's creation at CERN echoes the ancient idea of a network of knowledge, akin to the concept of the "Akashic Records" in various spiritual traditions, believed to be a cosmic repository of all knowledge and events. Berners-Lee's contribution has made CERN not just a hub of scientific inquiry but also a pivotal point in the history of digital communication.</p>
+        <h3>John Bell</h3> 
+        <p>John Bell, known for Bell's Theorem, explored the perplexing phenomenon of quantum entanglement, which challenges classical notions of locality and separability. Bell's work has deepened our understanding of quantum mechanics and the fundamental nature of reality. Symbolically, quantum entanglement can be seen as a modern interpretation of ancient concepts of interconnectedness and oneness, reminiscent of Indra's Net in Hindu and Buddhist philosophy, which describes a universe where all things are interconnected.</p>
+        <h3>Carlo Rubbia and Simon van der Meer</h3>
+        <p>Carlo Rubbia and Simon van der Meer made significant contributions to particle physics with their discovery of the W and Z bosons, which are mediators of the weak force. Their groundbreaking work earned them the Nobel Prize and provided crucial insights into the Standard Model of particle physics. This discovery mirrors the ancient belief in elemental forces governing the universe, such as the Greek concept of the four classical elements (earth, water, air, fire) governed by the gods, highlighting the timeless quest to understand the fundamental forces of nature.</p>
+        <h3>CERN’s Logo</h3>
+        <p>CERN’s logo can be interpreted as three sixes (666), a number often associated with the "Number of the Beast" from the Book of Revelation. In Christian eschatology, this number is linked to the end times and the Antichrist, a figure associated with destruction and chaos. This interpretation can be seen as symbolic, connecting to Shiva, the Hindu god of destruction, who is also seen as a force of transformation and renewal, embodying the cyclical nature of the universe.</p>
+        <p>A statue of Shiva Nataraja (Shiva as the cosmic dancer) stands prominently in front of CERN. This depiction shows Shiva dancing within a circle of flames, symbolizing the cycle of creation, preservation, and destruction.</p>
+        <h3>Large Hadron Collider (LHC)</h3>
+        <p>The Large Hadron Collider (LHC) at CERN is the world’s largest and most powerful particle accelerator. Its mission to discover the Higgs boson, often referred to as the "God particle," aimed to reveal the mechanism that gives mass to elementary particles. This pursuit of fundamental understanding can be linked to ancient quests for divine knowledge and the essence of creation, reminiscent of the alchemical search for the philosopher's stone, which was believed to uncover the universe's deepest secrets.</p>
+        <p>Visually, the circular structure of the LHC resembles a mandala, an intricate geometric design used in Hindu and Buddhist traditions to represent the universe. Mandalas are used in meditation and rituals to symbolize cosmic order and spiritual enlightenment.</p>
+        <img src="../img/mandala.JPG" alt="gods" title="Mandala" width="" height="375" loading="lazy">
+        <img src="../img/LHC.JPG" alt="gods" title="LHC" width="" height="375" loading="lazy"> 
+        <p>Mandalas serve as a powerful spiritual tool connecting practitioners to various deities and divine energies. In Hinduism, they are linked to Vishnu and Shiva, reflecting cosmic order and transformation. In Buddhism, mandalas are associated with the Buddha and Avalokiteshvara, symbolizing enlightenment and compassion. In Tantric practices, they connect to Kali and Dakinis, embodying transformation and spiritual liberation.</p>   
+      </div>
+      <div align="center">
+      <p>
+        <a href="#">Back to Top</a>
+      </p>
+      <p>
+        <a href="../index.html">Back Home</a>
+      </p>
+      </div>
+    </td>
+  </tr>
+</table>
+</div>
+
+</body>
+</html>

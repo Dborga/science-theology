@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<div align="center">
+    <form id="review-form" onsubmit="handleSubmit(event); return false;">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" oninput="enableComment()" required>
+        <br><br>
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" oninput="enableComment()" required>
+        <br><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" oninput="enableComment()" required>
+        <br><br>
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" oninput="enableComment()" required>
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <br><br>
+        <label for="comment">Comment:</label>
+        <textarea id="comment" name="comment" rows="6" cols="50" maxlength="1000" disabled></textarea>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+<script>
+
+function handleSubmit(event) {
+    event.preventDefault();  // Prevent form from submitting in the default way
+
+    const formData = {
+        first_name: document.getElementById('first-name').value.trim(),
+        last_name: document.getElementById('last-name').value.trim(),
+        age: document.getElementById('age').value.trim(),
+        gender: document.getElementById('gender').value.trim(),
+        comment: document.getElementById('comment').value.trim()
+    };
+
+    // Send the data to the Python backend
+    fetch('/submit_review', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            alert('Thank you for your review!');
+            document.getElementById('review-form').reset();  // Clear the form fields
+        } else {
+            alert('There was an error saving your review. Please try again.');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('There was an error saving your review. Please try again.');
+    });
+}
+
+function enableComment() {
+    const firstName = document.getElementById('first-name').value.trim();
+    const lastName = document.getElementById('last-name').value.trim();
+    const age = document.getElementById('age').value.trim();
+    const gender = document.getElementById('gender').value.trim();
+    const commentBox = document.getElementById('comment');
+
+    if (firstName && lastName && age && gender) {
+        commentBox.disabled = false;
+    } else {
+        commentBox.disabled = true;
+    }
+}
+
+</script>
+    
+</body>
+</html>

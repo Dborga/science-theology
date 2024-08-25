@@ -1,0 +1,330 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>NASA Page</title>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+<style type="text/css">
+body, td, th {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 10px;
+    height: 100%;
+    color: #444;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    color: #003399;
+}
+
+h1 {
+    font-size: 36px;
+    color: #330099;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 30px;
+    color: #003399;
+    text-align: center;
+    margin-top: 20px;   
+}
+
+p {
+    line-height: 1.6;
+}
+
+nav {
+    background: #003399;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background: #002266;
+    border-radius: 5px;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #003399;
+    padding: 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+nav ul li ul li {
+    width: 200px;
+    margin: 0;
+}
+
+nav ul li ul li a {
+    font-size: 16px;
+    color: white;
+    padding: 10px;
+}
+
+nav ul li ul li a:hover,
+nav ul li ul li a:focus {
+    background: #002266;
+}
+
+nav ul li:hover ul,
+nav ul li:focus-within ul {
+    display: block;
+}
+
+.short-hr {
+    width: 95%;
+    margin: 20px auto;
+    border: 1px solid #0066FF;
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.image-row img {
+    width: 250px;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-row img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+body {
+    background-image: url('../img/helio.WEBP'), url('../img/helio.WEBP');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #171429;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.table-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 0px 0;
+}
+
+.table-wrapper table {
+    width: 100%;
+    max-width: 900px;
+    border: 2px solid #0066FF;
+    background: #FFFFFF;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.table-wrapper table td {
+    padding: 20px;
+}
+
+.table-wrapper table hr {
+    border-color: #0066FF;
+}
+
+.abstract {
+    margin: 20px 0;
+    padding: 20px;
+    background: #f9f9f9;
+    border-left: 5px solid #003399;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.abstract h2 {
+    margin-top: 0;
+}
+
+.footer {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.footer a {
+    color: #003399;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #002266;
+}
+</style>
+
+</head>
+
+<body>
+
+<div>
+<nav>
+    <ul id="main-menu">
+        <li><a href="#">Science</a>
+            <ul>
+                <li><a href="patriarchs.html">The Patriarchs</a></li>
+                <li><a href="cosmos.html">Cosmos</a></li>
+                <li><a href="nasa.html">NASA</a></li>
+                <li><a href="cern.html">CERN</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Religions</a>
+            <ul>
+                <li><a href="../religion/hindu.html">Hinduism</a></li>
+                <li><a href="../religion/budh.html">Buddhism</a></li>
+                <li><a href="../religion/islam.html">Islam</a></li>
+                <li><a href="../religion/spiritual.html">Spirituality</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Humans</a>
+            <ul>
+                <li><a href="../humans/atheism.html">Atheism</a></li>
+                <li><a href="../humans/idolatry.html">Idolatry</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Politics</a>
+            <ul>
+                <li><a href="../politics/presidents.html">Presidents</a></li>
+                <li><a href="../politics/occult.html">Occult</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Why Christianity</a>
+            <ul>
+                <li><a href="../christianity/israel.html">Israel</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+</div>
+
+<div class="table-wrapper">
+<table width="900" border="2" align="center" cellpadding="15" cellspacing="0" bordercolor="#0066FF" bgcolor="#FFFFFF">
+  <tr>
+    <td>
+      <p align="center">
+        <span class="style13">Cosmos</span>
+        <br>
+        <span class="style14">place holder here</span>
+        <br>"by Dawit Borga"
+      </p>
+      <hr class="short-hr">
+      <p align="center">
+        <span class="style10"><span class="style13">Science</span><br />
+        <span class="style14">The fear of the LORD is the beginning of wisdom, and knowledge of the Holy One is understanding.</span><br /> 
+       
+        </span>
+      </p>
+      <div class="image-row">
+        <img src="../img/galaxy.JPG" alt="Galaxy" title="Galaxy">
+        <img src="../img/milkyway.JPG" alt="milkyway" title="milkyway">
+        <img src="../img/nebula.JPG" alt="nebula" title="Nebula">
+      </div>
+      <hr class="short-hr" />
+      <table width="750" border="1" align="center" cellpadding="10">
+        <tr>
+          <td>
+            <div align="center">
+              <h2>Cosmos</h2>
+              <p>The word "planet" originates from the Greek term "πλανήτης" (planētēs), meaning "wanderer" or "wandering star." This concept has intriguing connections to Christian theology, where stars are often referred to interchangeably as angels. If we consider stars as angels, then who are the wandering stars? According to the Book of Enoch, just as humans have responsibilities on Earth, angels have their own duties, including managing the movement of celestial bodies. However, angels possess free will and can choose to neglect these heavenly chores. Nonetheless, they must face the consequences of their disobedience. I believe that these wandering stars are those angels who refused to fulfill their purpose. As a result, they are revered as gods by humanity for the knowledge they impart about the heavens. I interpret these wandering stars as the angels mentioned in 2 Peter 2:4, who sinned and fell from grace.</p>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <hr class="short-hr"/>
+      <div align="center">
+          <h1>Planets</h1>
+          <h3>Scientific</h3>
+          <p>Planets, the celestial bodies orbiting stars, do not produce their own light but reflect the light of their star. In our solar system, the eight planets are Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune. Each has unique physical characteristics such as size, composition, atmosphere, and surface conditions. Esoterically, planets are seen as powerful influences on human affairs, both in astrology and various mystical practices.</p>
+          <h3>Esoteric</h3>
+          <p>In ancient mythology, planets were often associated with gods and goddesses. Mercury, the closest planet to the Sun, is linked to Hermes in Greek mythology and Mercury in Roman mythology, gods of communication and travel. Venus, the brightest planet, is associated with Aphrodite (Greek) and Venus (Roman), goddesses of love and beauty. Mars, known for its red color, is connected to Ares (Greek) and Mars (Roman), gods of war. Jupiter, the largest planet, is linked to Zeus (Greek) and Jupiter (Roman), kings of the gods. Saturn, known for its rings, is associated with Cronus (Greek) and Saturn (Roman), gods of time and harvest. Uranus is connected to the sky god Uranus (Greek), and Neptune, the blue planet, is linked to Poseidon (Greek) and Neptune (Roman), gods of the sea.</p>
+          <p>These mythological associations extend beyond the Greco-Roman pantheon. In Hindu mythology, for example, the planets are linked to the Navagraha, nine celestial deities who influence human destiny. Mars is associated with Mangala, the god of war and celibacy, while Venus is linked to Shukra, the god of wealth and pleasure. These connections illustrate the deep-seated belief that planets hold power over human affairs, a notion that persists in modern astrology.</p>
+          <h3>Astrology</h3>
+          <p>In astrology, planets influence the zodiac signs. Mercury rules Gemini and Virgo, Venus rules Taurus and Libra, Mars rules Aries and Scorpio, Jupiter rules Sagittarius and Pisces, and Saturn rules Capricorn and Aquarius. These connections highlight the planets' roles in shaping personality traits and life events.</p>
+
+      </div>
+      <hr class="short-hr"/>
+      <h1>Spiritual Connections</h1>
+      <div align="center">
+        <img src="../img/magic.WEBP" alt="gods" title="Pythagoras" width="" height="375" loading="lazy">
+        <p>The esoteric practices described in the "Testament of Solomon," the "Lesser Key of Solomon," the "Greater Key of Solomon," and Enochian magic all intricately connect planets with spiritual and mystical influences. In the "Testament of Solomon," demons are associated with specific planets, such as Beelzeboul with Venus and Asmodeus with Mars, reflecting their destructive and deceitful powers. The rituals involve using symbols like pentagrams and incantations to summon and control these spirits, emphasizing the importance of planetary influences in their esoteric functions.</p>
+        <p>The "Lesser Key of Solomon" and the "Greater Key of Solomon" further elaborate on these connections by detailing the hierarchies and powers of various demons and angels linked to planets and zodiac signs. For instance, the "Lesser Key" associates Bael with the Sun, Astaroth with Venus, and Buer with Mercury, each offering different abilities like invisibility, knowledge, and healing. The "Greater Key" focuses on summoning angels like Michael, Gabriel, and Raphael, who are connected to the Sun, Moon, and Mercury, respectively. These texts emphasize the use of precise rituals, protective circles, and consecrated tools to safely invoke and control these powerful beings, highlighting the planets' astrological significance.</p>
+        <p>Enochian magic, developed by John Dee and Edward Kelley, integrates a complex system of summoning angels using a unique language and rituals connected to planets and zodiac signs. Enochian angels, such as Madimi (Mercury) and Nalvage (Saturn), provide spiritual insights and knowledge. The precise nature of the Enochian system underscores the planets' roles in spiritual and mystical practices. Notable practitioners like John Dee, Aleister Crowley, and Isaac Newton illustrate the profound impact of these esoteric traditions, showing how the mystical connections between planets and spiritual beings have inspired both scientific and occult advancements.</p>
+        
+        <h3>Other Cultural Perspectives</h3>
+        <p>The concept of wandering stars as rebellious angels can be found in other cultures and religions as well. In Islamic tradition, the "Jinn" are spiritual beings created from smokeless fire, who, like angels, have free will. Some jinn chose to disobey Allah, leading to their fall. These rebellious jinn, much like the wandering stars, are often associated with deception and chaos. In Zoroastrianism, the planet Venus was personified as Anahita, the goddess of waters and fertility, who also has connections to the star Sirius, symbolizing purity and light.</p>
+        <h3>Scientific Interpretations</h3>
+        <p>From a scientific standpoint, the term "planet" has evolved over time. In the early days of astronomy, the Sun and Moon were also considered planets because they appeared to move against the backdrop of fixed stars. It wasn't until the Copernican Revolution in the 16th century that the heliocentric model was widely accepted, redefining what we now consider a planet. This shift in understanding reflects the broader theme of humanity's evolving comprehension of the cosmos—a journey that intertwines scientific discovery with mythological and spiritual interpretations.</p>
+        <h3>Linguistic Connections</h3>
+        <p>Much like the word "planet," other astronomical terms have roots in ancient languages and carry deeper meanings. The word "comet," for instance, comes from the Greek word "kometes," meaning "long-haired star," due to the comet's tail resembling flowing hair. Similarly, the term "galaxy" originates from the Greek word "galaxias," meaning "milky," a reference to the Milky Way galaxy. These linguistic connections underscore how ancient cultures perceived celestial phenomena as living entities, each with its own significance and role in the universe.</p>
+        <p>In conclusion, the concept of wandering stars as rebellious angels offers a fascinating lens through which to explore the cosmos, blending scientific facts with mythological, esoteric, and spiritual insights. Whether through the celestial wanderings of planets or the spiritual journeys of beings associated with them, the cosmos continues to inspire a profound sense of wonder and reverence, bridging the gap between the seen and the unseen, the known and the unknown.</p>
+      </div>
+
+
+
+      
+
+      
+
+      <div align="center">
+      <p>
+        <a href="#">Back to Top</a>
+    </p>
+    <p>
+        <a href="../index.html">Back Home</a>
+    </p>
+    </div>
+    </td>
+  </tr>
+</table>
+</div>
+
+</body>
+</html>

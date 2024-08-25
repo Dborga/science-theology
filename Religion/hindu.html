@@ -1,0 +1,335 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Main Page</title>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+<style type="text/css">
+body, td, th {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 10px;
+    height: 100%;
+    color: #444;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    color: #003399;
+}
+
+h1 {
+    font-size: 36px;
+    color: #330099;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 30px;
+    color: #003399;
+    text-align: center;
+    margin-top: 20px;   
+}
+
+p {
+    line-height: 1.6;
+}
+
+nav {
+    background: #003399;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background: #002266;
+    border-radius: 5px;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #003399;
+    padding: 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+nav ul li ul li {
+    width: 200px;
+    margin: 0;
+}
+
+nav ul li ul li a {
+    font-size: 16px;
+    color: white;
+    padding: 10px;
+}
+
+nav ul li ul li a:hover,
+nav ul li ul li a:focus {
+    background: #002266;
+}
+
+nav ul li:hover ul,
+nav ul li:focus-within ul {
+    display: block;
+}
+
+.short-hr {
+    width: 95%;
+    margin: 20px auto;
+    border: 1px solid #0066FF;
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.image-row img {
+    width: 250px;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-row img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+body {
+    background-image: url(/img/hindugods.JPG), url(/img/hindugods2.jpg);
+    background-size: auto 100%, contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #171429;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-position: left center, right center;
+}
+
+.table-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 0px 0;
+}
+
+.table-wrapper table {
+    width: 100%;
+    max-width: 900px;
+    border: 2px solid #0066FF;
+    background: #FFFFFF;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.table-wrapper table td {
+    padding: 20px;
+}
+
+.table-wrapper table hr {
+    border-color: #0066FF;
+}
+
+.abstract {
+    margin: 20px 0;
+    padding: 20px;
+    background: #f9f9f9;
+    border-left: 5px solid #003399;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.abstract h2 {
+    margin-top: 0;
+}
+
+.footer {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.footer a {
+    color: #003399;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #002266;
+}
+</style>
+
+</head>
+
+<body>
+
+<div>
+<nav>
+    <ul id="main-menu">
+        <li><a href="#">Science</a>
+            <ul>
+                <li><a href="../science/patriarchs.html">The Patriarchs</a></li>
+                <li><a href="../science/cosmos.html">Cosmos</a></li>
+                <li><a href="../science/nasa.html">NASA</a></li>
+                <li><a href="../science/cern.html">CERN</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Religions</a>
+            <ul>
+                <li><a href="hindu.html">Hinduism</a></li>
+                <li><a href="budh.html">Buddhism</a></li>
+                <li><a href="islam.html">Islam</a></li>
+                <li><a href="spiritual.html">Spirituality</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Humans</a>
+            <ul>
+                <li><a href="humans/atheism.html">Atheism</a></li>
+                <li><a href="humans/Idolatry.html">Idolatry</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Politics</a>
+            <ul>
+                <li><a href="politics/presidents.html">Presidents</a></li>
+                <li><a href="politics/Occult.html">Occult</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Why Christianity</a>
+            <ul>
+                <li><a href="christianity/israel.html">Israel</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+</div>
+
+<div class="table-wrapper">
+<table width="900" border="2" align="center" cellpadding="15" cellspacing="0" bordercolor="#0066FF" bgcolor="#FFFFFF">
+  <tr>
+    <td>
+      <p align="center">
+        <span class="style13">Hinduism</span>
+        <br>
+        <span class="style14">place holder here</span>
+        <br>"by Dawit Borga"
+      </p>
+      <hr class="short-hr">
+      <p align="center">
+        <span class="style10"><span class="style13">The Hindu Practice</span><br />
+        <span class="style14">The fear of the LORD is the beginning of wisdom, and knowledge of the Holy One is understanding.</span><br /> 
+       
+        </span>
+      </p>
+      <div class="image-row">
+        <img src="/img/enoch.WEBP" alt="Image 1" height="250"title="Hubal">
+        <img src="/img/practice.WEBP" alt="Pythagoras" height="300" title="Kaaba">
+        <img src="/img/zodiac.JPG" alt="goddess" height="300" title="Triple goddess">
+        <img src="/img/meditate.JPG" alt="Issac Newton" title="Cresent Moon">
+        <img src="/img/tarot.PNG" alt="Nicolaus Copernicus" title="Zahir Mosque">
+      </div>
+      <hr class="short-hr" />
+      <table width="750" border="1" align="center" cellpadding="10">
+        <tr>
+          <td>
+            <div align="center">
+              <h2>Introduction</h2>
+              <p>In this exploration, I articulate why I personally reject Islam, primarily due to its foundational claims regarding the corruption of the Holy Scriptures of the Old and New Testaments. As someone deeply rooted in the Judeo-Christian tradition, I find these assertions particularly troubling. Islam posits that the Bible has undergone corruption—a claim that, from my perspective, is not adequately supported by evidence within Islamic teachings themselves. Furthermore, the presence of multiple translations of the Bible, aimed at bridging linguistic and cultural gaps across generations, does not, in my view, constitute corruption. This contrasts sharply with Islam's reward-based system of faith, where paradise is earned through deeds, diverging significantly from the Christian doctrine of grace, which teaches that salvation is a gift and not a result of human effort.</p>
+              <p>My skepticism extends to the historical claims made by Islam, notably that Abraham constructed the Kaaba. This assertion is not corroborated by external historical sources and contradicts evidence linking the site to pre-Islamic pagan practices. The region was historically associated with the veneration of lunar deities, such as the goddess Al-Lat, who was worshiped in the form of a square stone. Additionally, the lack of a transparent explanation or mechanism within Islam to prevent the Quran from undergoing similar corruption raises substantial doubts about the consistency and reliability of its teachings.</p>
+              <p>For this reason, I do not judge the characteristics of any deity based on the actions of their followers. Instead, I advocate for spiritual independence above all else.</p>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <hr class="short-hr"/>
+      <div align="center">
+        <img src="../img/hindu.JPG" alt="gods" title="Hubal" width="" height="375" loading="lazy">
+        <h1>Hinduism</h1>
+        <p>Hinduism, one of the world's oldest religions, originated in the Indus Valley Civilization around 2500-1500 BCE. It developed through a blend of cultural and spiritual traditions, including the Vedic religion of the Aryans, who migrated to India around 1500 BCE. The Vedas, composed during this period, are Hinduism's oldest sacred texts.</p>
+        <p>Hindus worship many gods and goddesses, each representing different aspects of the divine. Key deities include Brahma (The Creator) symbolized by the lotus, Vedas, and prayer beads. Vishnu (The Preserver) recognized by the conch, discus, lotus, and mace. Shiva (The Destroyer) Identified by the trident, drum, serpent, and third eye. Lakshmi (Goddess of Wealth) associated with the lotus, gold coins, and elephants. Saraswati (Goddess of Knowledge) Represented with the veena, books, and a swan. Ganesha (Remover of Obstacles) known for his elephant head and symbols like the broken tusk and modaka. Hanuman (The Monkey God) depicted with a mace, mountain, and a heart showing Rama and Sita.</p>
+        <h3>Brahma - The Creator</h3>
+        <p>Brahma is the creator god and part of the Trimurti (trinity) in Hinduism, which includes Vishnu and Shiva. He is often depicted with four heads, each reciting one of the Vedas. Brahma is responsible for the creation of the universe and all beings. Despite his pivotal role in creation, Brahma is less commonly worshipped compared to Vishnu and Shiva.</p>
+        <p>Brahma's role as the creator can be compared to Babylonian gods like Marduk, who was considered a creator deity. Marduk's symbol was the spade or hoe, tools used for creation and agriculture. In occult traditions, figures like Hermes Trismegistus, considered a syncretic deity combining elements of the Greek god Hermes and the Egyptian god Thoth, played similar roles in the creation and dissemination of esoteric knowledge. Brahma’s creation role reflects these ancient deities' archetypal functions in shaping the cosmos and imparting wisdom.</p>
+        <h3>Vishnu - The Preserver</h3>
+        <p>Vishnu is the preserver and protector of the universe. He is depicted with blue skin, holding the symbols of his attributes, and often seen resting on the serpent Ananta. Vishnu is known for his ten avatars, including Rama and Krishna, who descend to earth to restore cosmic order and protect dharma (righteousness).</p>
+        <h3>Shiva - The Destroyer</h3>
+        <p>Shiva is the destroyer and transformer, often depicted in deep meditation, performing the cosmic dance (Tandava), or as Nataraja (Lord of Dance). He embodies both destruction and regeneration, playing a crucial role in the cycle of creation, preservation, and dissolution.</p>
+        <p>Shiva as the destroyer parallels the Greek god Apollo, mentioned as the Destroyer in Revelation, and deities of destruction like the Canaanite god Resheph. In occult traditions, figures such as Baphomet, often depicted with elements symbolizing duality and transformation, echo Shiva’s role in balancing creation and destruction. The Egyptian god Set, associated with chaos and disorder, also shares similarities with Shiva's destructive aspect, highlighting the transformative power of destruction in both ancient and modern esoteric beliefs.</p>
+        <h3>Lakshmi - Goddess of Wealth</h3>
+        <p>Lakshmi is the goddess of wealth, fortune, and prosperity. She is often depicted sitting or standing on a lotus flower with gold coins flowing from her hands. Lakshmi is revered during Diwali, the festival of lights, which celebrates prosperity and the triumph of good over evil.</p>
+        <p>Lakshmi's association with wealth and prosperity can be compared to the worship of Mammon, mentioned in the New Testament as a symbol of greed and material wealth. In Mesopotamian mythology, the goddess Ishtar, associated with fertility, love, and war, also symbolized abundance and prosperity. In the occult, the pursuit of wealth and material success is often symbolized by figures like Mammon, reflecting the enduring human fascination with material prosperity and its spiritual implications.</p>
+        <h3>Saraswati - Goddess of Knowledge</h3>
+        <p>Saraswati is the goddess of knowledge, music, and the arts. She is often depicted playing the veena and surrounded by symbols of learning. Saraswati is celebrated for her wisdom and is invoked by students and scholars seeking knowledge and insight.</p>
+        <p>Saraswati's association with knowledge can be linked to the ancient pursuit of wisdom in various cultures, such as the worship of Thoth in Egyptian mythology. Thoth, like Saraswati, was associated with wisdom and writing. In occult traditions, Hermes Trismegistus represents the pursuit of esoteric knowledge and the merging of spiritual and scientific wisdom, reflecting Saraswati's role in imparting intellectual and artistic insights.</p>
+        <h3>Ganesha - Remover of Obstacles</h3>
+        <p>Ganesha is known as the remover of obstacles and the god of beginnings. He has the head of an elephant and is often depicted with a mouse as his vehicle. Ganesha is widely worshipped at the start of new ventures and is considered a symbol of good fortune and wisdom.</p>
+        <p>Ganesha's elephant head can be compared to the apocryphal account in the Book of Jasher, where those who tried to kill God at the Tower of Babel became like apes and elephants. This story aligns with the appearance of Ganesha and the elephant-headed god Airavata in Hindu mythology. In the occult, animal-headed deities like the Egyptian gods Anubis (jackal-headed) and Thoth (ibis-headed) symbolize the blending of human and animal traits, representing various aspects of wisdom, protection, and transformation.</p>
+        <h3>Hanuman - The Monkey God</h3>
+        <p>Hanuman is a devoted follower of Rama and a symbol of strength, devotion, and selfless service. He is often depicted as a monkey and is celebrated for his unwavering loyalty and heroic deeds in the epic Ramayana.</p>
+        <p>Hanuman's monkey form can be compared to the transformation mentioned in the Book of Jasher. In Mesopotamian mythology, gods like Enki were often associated with animals, emphasizing their connection to nature and their protective roles. In the occult, animal symbolism is prevalent, with animals representing various spiritual qualities and powers. Hanuman’s role as a loyal servant mirrors the worship of intermediary spirits or deities in many ancient cultures, who acted as messengers or protectors.</p>
+
+       </div> 
+       <hr class="short-hr">
+       
+        <hr class="short-hr">   
+        <div align="center">
+            <p align="center">
+                <span class="style13">Hubal and Shiva</span>
+        </div>                 
+      <div align="center">
+      <p>
+        <a href="#">Back to Top</a>
+    </p>
+    <p>
+        <a href="../index.html">Back Home</a>
+    </p>
+    </div>
+    </td>
+  </tr>
+</table>
+</div>
+
+</body>
+</html>
